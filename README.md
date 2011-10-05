@@ -1,7 +1,12 @@
 SID module control
 ==================
 
-A test script and a sid player for seb's SID module.
+reSID is pretty good, but wasn't quite good enough...
 
-The 6502 emulation code is from [here](http://svn.dslinux.org/viewvc/dslinux/branches/vendor/tinysid/sidengine.c?view=markup).
+This tool interpretes sid-files and sends the SID register values to
+(seb's awesome SID module)[https://github.com/sebseb7/SidModule].
+
+The MOS 6502 emulation code is not mine. I found it
+[here](http://svn.dslinux.org/viewvc/dslinux/branches/vendor/tinysid/sidengine.c?view=markup).
+May the author not get mad at me.
 
