@@ -45,14 +45,14 @@ static void play() {
 	config.c_iflag = 0;
 	config.c_oflag = 0;
 	cfsetospeed(&config, B115200);
-    cfsetispeed(&config, B115200);
+	cfsetispeed(&config, B115200);
 
 	config.c_cflag = CS8|CREAD|CLOCAL;
 	tcsetattr(serial, TCSANOW, &config);
 
 
-    // zero out all registers
-    int i;
+	// zero out all registers
+	int i;
 	unsigned char t[2] = { 0, 0 };
 	for(i = 0; i < 25; i++) {
 		t[0] = i;
@@ -93,13 +93,13 @@ int main(int argc, char **argv) {
 
 	c64Init();
 	int a = c64SidLoad(argv[1], &init_addr, &play_addr, &song, &max_songs,
-	                    &speed, name, author, copyright);
-    if(!a) {
-        puts("error");
-        return 1;
-    }
+						&speed, name, author, copyright);
+	if(!a) {
+		puts("error");
+		return 1;
+	}
 
-    // song number
+	// song number
 	if(argc > 2) {
 		int s = atoi(argv[2]);
 		if(s) {
