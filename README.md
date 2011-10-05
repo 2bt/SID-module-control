@@ -1,7 +1,7 @@
 SID module control
 ==================
 
-reSID is pretty good, but wasn't quite good enough...
+reSID is pretty good, but not quite good enough...
 
 This tool interpretes sid-files and sends the SID register values to
 [seb's awesome SID module](https://github.com/sebseb7/SidModule).
